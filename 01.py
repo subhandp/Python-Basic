@@ -40,5 +40,22 @@ def masking(text):
     for i in range(text_len):
         mask += '*'
     print(mask+text[text_len:])
-    
+
+# def missing_alphabet(text):
+#     alphabet = "abcdefghijklmnopqrstuvwxyz"
+#     alphabet = set(alphabet)
+#     text = set(text)
+#     print(alphabet.difference(text))
+
+# missing_alphabet(['a,'])
+
+def sort_odd(mynumbers):
+    sorted_numbers_odd = sorted([item for item in mynumbers if item%2 != 0])
+    index_odd= 0
+    for i in range(len(mynumbers)):
+        if mynumbers[i] %2 != 0:
+            mynumbers[i] = sorted_numbers_odd[index_odd]
+            index_odd += 1
+    print(mynumbers)
+
 
