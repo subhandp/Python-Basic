@@ -34,12 +34,11 @@ def bubble_sort(numbers):
     print(numbers)
 
 def masking(text):
-    not_mask = 2
+    not_mask = 3
     mask =''
     text_len = len(text)-not_mask
     for i in range(text_len):
         mask += '*'
-    print(mask+text[text_len:not_mask])
+    print(mask+text[text_len:])
     
-masking('12345')
 
