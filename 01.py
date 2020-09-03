@@ -41,13 +41,13 @@ def masking(text):
         mask += '*'
     print(mask+text[text_len:])
 
-# def missing_alphabet(text):
-#     alphabet = "abcdefghijklmnopqrstuvwxyz"
-#     alphabet = set(alphabet)
-#     text = set(text)
-#     print(alphabet.difference(text))
+def missing_alphabet(text):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    alphabet = set(alphabet)
+    text = set(text)
+    print(alphabet.difference(text))
 
-# missing_alphabet(['a,'])
+missing_alphabet(['a','b'])
 
 def sort_odd(mynumbers):
     sorted_numbers_odd = sorted([item for item in mynumbers if item%2 != 0])
@@ -57,5 +57,8 @@ def sort_odd(mynumbers):
             mynumbers[i] = sorted_numbers_odd[index_odd]
             index_odd += 1
     print(mynumbers)
+
+numbers = [9,4,2,4,1,5,3,0]
+sort_odd(numbers)
 
 
